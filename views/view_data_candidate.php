@@ -1,8 +1,8 @@
 <?php
-include 'views/headerpart.php';
+include 'headerpart.php';
 ?>
 <?php
-include('backend/db.php');
+include('../backend/db.php');
 $query1 = "SELECT * FROM candidates";
 $result = mysqli_query($conn,$query1);
 echo "<div class='voter_table_container'>";
@@ -21,13 +21,13 @@ echo '<td>' . $row['candidate_pwd'] . '</td>';
 echo '<td>' . $row['candidate_mobile'] . '</td>';
 echo '<td>' . $row['candidate_uin'] . '</td>';
 echo '<td>' . $row['candidate_about'] . '</td>';
-echo '<td><a href="views/edit_data_candidate.php?id=' . $row['candidate_id'] . '">Edit</a></td>';
-echo '<td><a href="backend/delete_data_voter.php?id=' . $row['candidate_id'] . '">Delete</a></td>';
+echo '<td><a href="/views/edit_data_candidate.php?id=' . $row['candidate_id'] . '">Edit</a></td>';
+echo '<td><a href="/backend/delete_data_voter.php?id=' . $row['candidate_id'] . '">Delete</a></td>';
 echo "</tr>";
 }
 echo "</table>";
 ?>
 </div>
-<button class="submit-button" style="margin-left: 3%;" onclick="window.location.href='views/view_data_voter.php'">Voter Data</button>
+<button class="submit-button" style="margin-left: 3%;" onclick="window.location.href='/views/view_data_voter.php'">Voter Data</button>
 </body>
 </html>

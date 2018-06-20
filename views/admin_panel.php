@@ -1,5 +1,5 @@
 <?php
-include 'views/headerpart.php';
+include 'headerpart.php';
 ?>
 <nav class="navbar navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>

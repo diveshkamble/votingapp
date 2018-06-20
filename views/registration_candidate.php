@@ -43,7 +43,7 @@
 		width: 100%;
 		background-size: stretch;
 		height: 100px;
-		background: url('images/pinkdust.png');
+		background: url('/images/pinkdust.png');
 
 	}
 
@@ -187,26 +187,26 @@ li.register-dropdown-container{
 
 <body>
 <header>
-	<img src="images/header.png">
+	<img src="/images/header.png">
 
 
 </header>
 
 <ul class="navigation-pane" style="font-family: 'Open Sans Condensed',sans-serif;
 ">
-  <li><a href="index.php">Home</a></li>
+  <li><a href="/index.php">Home</a></li>
   <li class="register-dropdown-container"><a href="">Register</a>
   <div class="dropdown-register">
-  	<a href="views/registration_voter.php">Voter Registration</a>
-  	<a href="views/registration_candidate.php">Candidate Registration</a>
+  	<a href="/views/registration_voter.php">Voter Registration</a>
+  	<a href="/views/registration_candidate.php">Candidate Registration</a>
 
   </div>
-  <li><a href="views/feedback.php">Feedback</a></li> <!--feedback page pending-->
-  <li><a href="views/contactus.php">Contact</a></li>	<!--Contact Us page pending-->		
+  <li><a href="/views/feedback.php">Feedback</a></li> <!--feedback page pending-->
+  <li><a href="/views/contactus.php">Contact</a></li>	<!--Contact Us page pending-->		
 </ul>
 
 <div id="form-container" align="right">
-<form action="backend/signup_candidate.php" method="POST" >
+<form action="/backend/signup_candidate.php" method="POST" >
 	<ul>
 		<li>First Name:</li>
 		<li><input type="text" name="first_name"></li>
@@ -250,7 +250,7 @@ li.register-dropdown-container{
 		<div id="footer-container">
 		<br>
 			<p>Copyright @ 2017</p>
-			<p>Made by Divesh Kamble, Prasanna Bakshi, Sagar Borhade, Taufeeq Samnani.</p>
+			<p>Created by Divesh Kamble.</p>
 
 
 		</div>

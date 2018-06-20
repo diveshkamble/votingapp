@@ -61,6 +61,6 @@
  	}
 
  } else {
- 	header("Location: ../registration_voter.php");
+ 	header("Location: ../views/registration_voter.php");
  	exit();
  }

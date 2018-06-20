@@ -1,10 +1,10 @@
 <?php
-include 'views/headerpart.php';
+include 'headerpart.php';
 ?>
 
 	<h1 class="IndexPageIdent">Admin Login</h1>
 	<div id="container">
-	<form action="backend/login_ad.php" method="POST" >
+	<form action="/backend/login_ad.php" method="POST" >
 
 		<label><b>Email</b></label>
 		<br>
@@ -17,8 +17,8 @@ include 'views/headerpart.php';
 		<br>
 		<button id="signupbutton" type="submit" name="submit">Sign in</button>
 		<br>
-		<button id="register_candidate" type="button" onclick="window.location.href='views/candidate_login.php'">Candidate</button>
-		<button id="register_voter" type="button" onclick="window.location.href='index.php'">Voter</button>
+		<button id="register_candidate" type="button" onclick="window.location.href='/views/candidate_login.php'">Candidate</button>
+		<button id="register_voter" type="button" onclick="window.location.href='/index.php'">Voter</button>
 
 	</form>
 	</div>
@@ -30,10 +30,11 @@ include 'views/headerpart.php';
 		<div id="footer-container-index-page">
 		<br>
 			Copyright @ 2017
-			Made by Jon Snow.
+			Created by Divesh Kamble.
 
 
 		</div>
 	</footer>
 </body>
 </html>
+	</form>

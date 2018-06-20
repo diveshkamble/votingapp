@@ -8,13 +8,9 @@ if ($votecheck == 'voted') {
 
 	echo "Voted Already. Cannot Vote";
 	echo"<h1>Voted Already</h1>";
-	echo "<script type=\"text/javascript\"> window.alert('Voted Already Cannot vote'); window.location.href='../voting.php';</script>";
-	//header("Location: ../voting.php?voted=yes");
-	$msg = "Already voted. Cannot Vote";
-	echo $msg;
-	//header("Location: ../voting.php?votingerror");
+	echo "<script type=\"text/javascript\"> window.alert('Voted Already Cannot vote'); window.location.href='/views/voting.php';</script>";
+	
 }
-
 else{
 if (isset($_POST['submit'])&&isset($_POST['vote'])) {
 	

@@ -1,5 +1,5 @@
 <?php
-include 'views/headerpart.php';
+include 'headerpart.php';
 ?>
 <style type="text/css">
 input[type="radio"]{
@@ -95,32 +95,6 @@ footer{
     <p>Phone: 9004620924</p> 
   </div>
     </th>
-    <th align="center">
-      
-  <div class="container-name" align="center">
-    <h4><b>Prasanna Bakshi</b></h4> 
-    <p>Email: pkbakshi7@gmail.com</p>
-    <p>Phone: 8424812903</p> 
-     </div>
-    </th>
-  </tr>
-  <tr>
-    <th align="center"> 
-      
-  <div class="container-name" align="center">
-    <h4><b>Sagar Borhade</b></h4> 
-    <p>Email: sagarborhade26@gmail.com</p> 
-    <p>Phone: 8286694070</p>
-  </div>
-    </th>
-    <th align="center">
-      
-  <div class="container-name" align="center">
-    <h4><b>Taufeeq Samnani</b></h4> 
-    <p>Email: taufeeqsamnani@gmail.com</p>
-    <p>Phone: 9004244230</p> 
-</div>
-    </th>
     
   </tr>
 </table>
@@ -129,7 +103,7 @@ footer{
 		<div id="footer-container">
 		<br>
 			Copyright @ 2017
-			Made by Divesh Kamble, Sagar Borhade, Prasanna Bakshi, Taufeeq Samnani.
+			Created by Divesh Kamble.
     </div>
 	</footer>
 </body>

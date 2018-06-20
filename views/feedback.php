@@ -1,7 +1,7 @@
 <?php
-include 'views/headerpart.php';
+include 'headerpart.php';
 ?>
-<form class="feedback-form" action="backend/feedback_backend.php" method="POST">
+<form class="feedback-form" action="/backend/feedback_backend.php" method="POST">
 <div class="feedback-form-container">
 
 	<br> 
@@ -24,5 +24,5 @@ include 'views/headerpart.php';
 </form>
 
 <?php
-include 'views/footerpart.php';
+include 'footerpart.php';
 ?>

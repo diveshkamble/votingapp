@@ -48,7 +48,7 @@ function renderForm($id, $firstname,$middlename, $lastname,$emailid,$branch,$pwd
 		width: 100%;
 		background-size: stretch;
 		height: 100px;
-		background: url('images/pinkdust.png');
+		background: url('/images/pinkdust.png');
 	}
 
 	header img
@@ -190,7 +190,7 @@ li.register-dropdown-container{
 
 <body>
 	<header>
-	<img src="images/header.png">
+	<img src="/images/header.png">
 
 
 </header>
@@ -198,15 +198,15 @@ li.register-dropdown-container{
 
 <ul class="navigation-pane" style="font-family: 'Open Sans Condensed',sans-serif;
 ">
-  <li><a href="index.php">Home</a></li>
+  <li><a href="/index.php">Home</a></li>
   <li class="register-dropdown-container"><a href="">Register</a>
   <div class="dropdown-register">
-  	<a href="views/registration_voter.php">Voter Registration</a>
-  	<a href="views/registration_candidate.php">Candidate Registration</a>
+  	<a href="/views/registration_voter.php">Voter Registration</a>
+  	<a href="/views/registration_candidate.php">Candidate Registration</a>
 
   </div>
-  <li><a href="views/feedback.php">Feedback</a></li> <!--feedback page pending-->
-  <li><a href="views/contactus.php">Contact</a></li>	<!--Contact Us page pending-->		
+  <li><a href="/views/feedback.php">Feedback</a></li> <!--feedback page pending-->
+  <li><a href="/views/contactus.php">Contact</a></li>	<!--Contact Us page pending-->		
 </ul>
 
 <div id="form-container" align="right">
@@ -272,7 +272,7 @@ echo '<div style="padding:4px; border:1px solid red; color:red;">'.$error.'</div
 <?php
 
 }
-include('backend/db.php');
+include('../backend/db.php');
 if (isset($_POST['submit']))
 {
 if (is_numeric($_POST['id']))
@@ -303,7 +303,7 @@ else
 $candidate_insert_query = "UPDATE candidates SET candidate_first='$firstname', candidate_middle='$middlename', candidate_last='$lastname', candidate_email='$emailid', candidate_branch='$branch', candidate_pwd='$hashedPwd', candidate_mobile='$mobile' , candidate_uin='$uin', candidate_about='$aboutme' WHERE candidate_id='$id'";
 
 mysqli_query($conn,$candidate_insert_query);
-header("Location: views/view_data_candidate.php");
+header("Location: ./view_data_candidate.php");
 }
 }
 else
@@ -345,5 +345,5 @@ echo 'Error!';
 }
 ?>
 <?php
-include 'views/footerpart.php';
+include 'footerpart.php';
 ?>

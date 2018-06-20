@@ -5,7 +5,7 @@ include 'views/headerpart.php';
 	<h1 class='IndexPageIdent'>Voter Login</h1>
 	
 	<div id="container">
-	<form action="backend/login.php" method="POST" >
+	<form action="/backend/login.php" method="POST" >
 
 		<label><b>Email</b></label>
 		<br>
@@ -18,9 +18,9 @@ include 'views/headerpart.php';
 		<br>
 		<button id="signupbutton" type="submit" name="submit">Sign in</button>
 		<br>
-		<button id="register_candidate" type="button" onclick="window.location.href='views/candidate_login.php'">Candidate</button>
+		<button id="register_candidate" type="button" onclick="window.location.href='/views/candidate_login.php'">Candidate</button>
 
-		<button id="register_voter" type="button" onclick="window.location.href='views/admin_login.php'">Admin</button>
+		<button id="register_voter" type="button" onclick="window.location.href='/views/admin_login.php'">Admin</button>
 
 	</form>
 	</div>
@@ -32,7 +32,7 @@ include 'views/headerpart.php';
 		<div id="footer-container-index-page">
 		<br>
 			<p>Copyright @ 2017</p>
-			<p>Made by Divesh Kamble, Prasanna Bakshi, Sagar Borhade, Taufeeq Samnani.</p>
+			<p>Created by Divesh Kamble.</p>
 
 
 		</div>

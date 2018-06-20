@@ -184,21 +184,21 @@ li.register-dropdown-container{
 
 <body>
 <header>
-	<img src="images/header.png">
+	<img src="/images/header.png">
 
 
 </header>
 
 <ul class="navigation-pane">
-  <li><a href="index.php">Home</a></li>
+  <li><a href="/index.php">Home</a></li>
   <li class="register-dropdown-container"><a href="">Register</a>
   <div class="dropdown-register">
-  	<a href="views/registration_voter.php">Voter Registration</a>
-  	<a href="views/registration_candidate.php">Candidate Registration</a>
+  	<a href="/views/registration_voter.php">Voter Registration</a>
+  	<a href="/views/registration_candidate.php">Candidate Registration</a>
 
   </div>
-  <li><a href="views/feedback.php">Feedback</a></li> <!--feedback page pending-->
-  <li><a href="views/contactus.php">Contact</a></li>	<!--Contact Us page pending-->		
+  <li><a href="/views/feedback.php">Feedback</a></li> <!--feedback page pending-->
+  <li><a href="/views/contactus.php">Contact</a></li>	<!--Contact Us page pending-->		
 </ul>
 
 <div id="form-container" align="right">
@@ -250,7 +250,7 @@ echo '<div style="padding:4px; border:1px solid red; color:red;">'.$error.'</div
 </html>
 <?php
 }
-include('backend/db.php');
+include('../backend/db.php');
 if (isset($_POST['submit']))
 {
 if (is_numeric($_POST['id']))
@@ -280,7 +280,7 @@ else
 $voter_insert_query = "UPDATE voters SET voter_first='$firstname', voter_middle='$middlename', voter_last='$lastname',voter_email='$emailid', voter_branch='$branch', voter_pwd='$hashedPwd', voter_mobile='$mobile' , voter_uin='$uin' WHERE voter_id='$id'";
 
 mysqli_query($conn,$voter_insert_query);
-header("Location: view_data_voter.php");
+header("Location: ./view_data_voter.php");
 }
 }
 else

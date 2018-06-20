@@ -1,10 +1,10 @@
 <?php
-include 'views/headerpart.php';
+include 'headerpart.php';
 ?>
 
  <div class="container-candidate">
     <div class="page-header">
-        <button class="submit-button" style="float: right; width: 100%" onclick="window.location.href='voting.php'">Proceed to Vote</button> 
+        <button class="submit-button" style="float: right; width: 100%" onclick="window.location.href='/views/voting.php'">Proceed to Vote</button> 
         
         <div style="clear: both;">
         <h1 style="float: left;">Candidate Page</h1>
@@ -25,7 +25,7 @@ include 'views/headerpart.php';
                 </h2>
                 <div class="mc-content">
                     <div class="img-container">
-                        <img class="img-responsive" src="images/man.jpg">
+                        <img class="img-responsive" src="/images/man.jpg">
                     </div>
                     <div class="mc-description">
                         Works with Microsoft Word.
@@ -56,7 +56,7 @@ include 'views/headerpart.php';
                 </h2>
                 <div class="mc-content">
                     <div class="img-container">
-                        <img class="img-responsive" src="images/man.jpg">
+                        <img class="img-responsive" src="/images/man.jpg">
                     </div>
                     <div class="mc-description">
                         Knows Fourier Theorem.
@@ -87,7 +87,7 @@ include 'views/headerpart.php';
                 </h2>
                 <div class="mc-content">
                     <div class="img-container">
-                        <img class="img-responsive" src="images/man.jpg">
+                        <img class="img-responsive" src="/images/man.jpg">
                     </div>
                     <div class="mc-description">
                         Chicken and all that shit!
@@ -118,7 +118,7 @@ include 'views/headerpart.php';
                 </h2>
                 <div class="mc-content">
                     <div class="img-container">
-                        <img class="img-responsive" src="images/man.jpg">
+                        <img class="img-responsive" src="/images/man.jpg">
                     </div>
                     <div class="mc-description">
                         Applies for Computer oriented companies XD
@@ -149,7 +149,7 @@ include 'views/headerpart.php';
                 </h2>
                 <div class="mc-content">
                     <div class="img-container">
-                        <img class="img-responsive" src="images/man.jpg">
+                        <img class="img-responsive" src="/images/man.jpg">
                     </div>
                     <div class="mc-description">
                         ????????????????????????????????
@@ -180,7 +180,7 @@ include 'views/headerpart.php';
                 </h2>
                 <div class="mc-content">
                     <div class="img-container">
-                        <img class="img-responsive" src="images/man.jpg">
+                        <img class="img-responsive" src="/images/man.jpg">
                     </div>
                     <div class="mc-description">
                         Majdoor with basic mathematics skill.
@@ -202,18 +202,18 @@ include 'views/headerpart.php';
         </div>
         
     </div>
-    <button class="submit-button" style="width: 100%;" onclick="window.location.href='voting.php'">Proceed to Vote</button>
+    <button class="submit-button" style="width: 100%;" onclick="window.location.href='/views/voting.php'">Proceed to Vote</button>
 </div>
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-    <script src="js/cards-js.js"></script>
+    <script src="/js/cards-js.js"></script>
 
     <footer>
         <div id="footer-container">
         <br>
             Copyright @ 2017
-            Made by Jon Snow.
+            Created by Divesh Kamble
 
 
         </div>
